@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: #fff;
+      }
+      .front {
+        margin: auto;
+        margin-top: 6vw;
+        border: 1px solid red;
+        width: 25%;
+        height: 30vw;
+        background: #000;
+      }
+      .coat {
+        margin: auto;
+        width: 0;
+        height: 0;
+        border-left: 9vw solid transparent;
+        border-right: 9vw solid transparent;
+        border-top: 22vw solid #384646;
+        filter: drop-shadow( 0px 5px 5px #384646);
+       }
+       .shirt{
+
+       }
+       .white {
+         width: 0;
+         height: 0;
+         border-left: 9vw solid transparent;
+         border-right: 9vw solid transparent;
+         border-top: 10vw solid #fff;
+         position: relative;
+         top: -22vw;
+         right: 9vw;
+       }
+       .white::before{
+      background: red;
+      width: 150vw;
+      height: 150vw;
+      border-radius: 50%;
+      position: absolute;
+       }
+       .white::after{
+         background: red;
+         width: 10vw;
+         height: 10vw;
+         border-radius: 50%;
+       }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+
+        <div class="front">
+          <div class="coat">
+            <div class="shirt">
+              <div class="white">
+                <div class="cravat">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
